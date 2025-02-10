@@ -19,9 +19,6 @@ type Checked = DropdownMenuCheckboxItemProps["checked"];
 
 const Themetoggle = () => {
   const { theme, setTheme } = useTheme();
-  const [showStatusBar, setShowStatusBar] = React.useState<Checked>(true);
-  const [showActivityBar, setShowActivityBar] = React.useState<Checked>(false);
-  const [showPanel, setShowPanel] = React.useState<Checked>(false);
   const [mount, setmount] = React.useState(false);
   React.useEffect(() => {
     setmount(true);

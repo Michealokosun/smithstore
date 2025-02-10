@@ -1,4 +1,4 @@
-import { Copy, CopyrightIcon, Heart } from "lucide-react";
+import { CopyrightIcon, Heart } from "lucide-react";
 
 const Footer = () => {
   const date = new Date().getFullYear();

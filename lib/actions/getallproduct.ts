@@ -2,7 +2,6 @@
 
 import { prisma } from "@/db/prisma";
 
-// import {prisma} from  "@/db/prisma"
 const getAllProduct = async (limit?: number) => {
   try {
     if (limit) {

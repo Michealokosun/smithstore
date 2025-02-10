@@ -1,6 +1,6 @@
-function groupProductsByCategory(products) {
-  return products.reduce((acc, product) => {
-    const { category, name, images } = product;
+function groupProductsByCategory(products: any) {
+  return products.reduce((acc: any, product: any) => {
+    const { category, images } = product;
 
     if (!acc[category]) {
       acc[category] = [];

@@ -32,7 +32,7 @@ const Productcard = ({ product }: { product: product }) => {
             <p className="text-red-600 capitalize">Out of stock</p>
           ) : (
             <p>
-              <Productprice price={product.price} />
+              <Productprice className="" price={product.price} />
             </p>
           )}
         </div>

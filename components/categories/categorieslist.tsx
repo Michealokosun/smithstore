@@ -1,4 +1,3 @@
-import sampleData from "@/sample-data";
 import * as React from "react";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import groupProductsByCategory from "@/lib/groupproducts";
