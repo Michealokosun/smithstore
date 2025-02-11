@@ -4,10 +4,13 @@ import logo from "../../app/images/logo.svg";
 import { APP_NAME } from "@/lib/constants/constants";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { ShoppingBag, User2Icon } from "lucide-react";
+import { LogOut, ShoppingBag, User2 } from "lucide-react";
 import Themetoggle from "../themetoggle";
+import { auth } from "@/auth";
+import Signoutbutton from "./siginoutandloginbuton";
 
-export const Header = () => {
+export const Header = async () => {
+  const session = await auth();
   return (
     <div className="w-full border-b shadow-sm ">
       <div className="wrapper  mx-auto max-w-7xl flex justify-between items-center">
@@ -26,12 +29,16 @@ export const Header = () => {
               <span>Cart</span>
             </Link>
           </Button>
-          <Button variant="default">
-            <Link className="flex items-center" href="/sigin">
-              <User2Icon />
-              <span>Login</span>
-            </Link>
-          </Button>
+          {session ? (
+            <Signoutbutton />
+          ) : (
+            <Button variant="default">
+              <Link className="flex items-center" href="/sign-in">
+                <User2 />
+                <span>Login</span>
+              </Link>
+            </Button>
+          )}
         </div>
       </div>
     </div>

@@ -12,11 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: `%s | smithshop`,
-  description: "Your No1 shopping mall where you can get everything",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

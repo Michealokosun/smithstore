@@ -22,3 +22,15 @@ export const insertproductschema = z.object({
   banner: z.string().nullable( ),
   price: currency
 })
+
+
+
+
+
+
+//signin form schema
+
+export const siginInFormSchema = z.object({
+  email: z.string().email("invalid emial"),
+  password: z.string().min(4, "password must be 6 character long")
+})

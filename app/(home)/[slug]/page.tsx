@@ -1,4 +1,4 @@
-export const metadata = {
+export const metadata: Metadata = {
   title: "Product-description",
 };
 
@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getproductbyslug } from "@/lib/actions/getproductbyslug";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 const Productdetails = async (props: { params: Promise<{ slug: string }> }) => {

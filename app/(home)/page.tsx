@@ -1,5 +1,7 @@
 import Categories from "@/components/categories/categorieslist";
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Home",
 };
 import Productlist from "@/components/product/productlist";
