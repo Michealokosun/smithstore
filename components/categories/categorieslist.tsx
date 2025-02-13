@@ -8,7 +8,9 @@ import getAllProduct from "@/lib/actions/getallproduct";
 
 const Categories = async () => {
   const productData = await getAllProduct();
-  const product = productData ? productData : [];
+  const product = productData
+    ? productData.map((p) => ({ ...p, rating: Number(p.rating) }))
+    : [];
 
   const groupedproduct = groupProductsByCategory(product);
   return (

@@ -1,4 +1,6 @@
-function groupProductsByCategory(products: any) {
+import { product } from "@/types";
+
+function groupProductsByCategory(products: product[]) {
   return products.reduce((acc: any, product: any) => {
     const { category, images } = product;
 

@@ -4,7 +4,7 @@ import logo from "../../app/images/logo.svg";
 import { APP_NAME } from "@/lib/constants/constants";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { LogOut, ShoppingBag, User2 } from "lucide-react";
+import { ShoppingBag, User2 } from "lucide-react";
 import Themetoggle from "../themetoggle";
 import { auth } from "@/auth";
 import Signoutbutton from "./siginoutandloginbuton";

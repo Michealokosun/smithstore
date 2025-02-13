@@ -15,6 +15,7 @@ import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import { sigiInwithCredential } from "@/lib/actions/signinuser";
 import { useActionState } from "react";
+import Link from "next/link";
 
 export function LoginForm({
   className,
@@ -84,9 +85,9 @@ export function LoginForm({
             </div>
             <div className="mt-4 text-center text-sm">
               Don&apos;t have an account?{" "}
-              <a href="/sign-up" className="underline underline-offset-4">
+              <Link href="/sign-up" className="underline underline-offset-4">
                 Sign up
-              </a>
+              </Link>
             </div>
           </form>
         </CardContent>

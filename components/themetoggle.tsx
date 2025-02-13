@@ -1,8 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -14,8 +12,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "next-themes";
 import { Moon, Sun, SunMoon } from "lucide-react";
-
-type Checked = DropdownMenuCheckboxItemProps["checked"];
 
 const Themetoggle = () => {
   const { theme, setTheme } = useTheme();

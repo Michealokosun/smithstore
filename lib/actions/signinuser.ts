@@ -19,12 +19,6 @@ export async function sigiInwithCredential(prevState:unknown, formdata:FormData)
        if(data){
         redirect("/")
        }
-
-        
-        
-      
-       
-
         return {success:true, message:"user sigined in successfully"}
         
     } catch (error) {
